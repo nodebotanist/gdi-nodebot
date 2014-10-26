@@ -1,0 +1,21 @@
+{
+  "name": "gdi-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "student-server.js",
+  "dependencies": {
+    "body-parser": "^1.9.1",
+    "consolidate": "^0.10.0",
+    "express": "^4.10.0",
+    "johnny-five": "^0.8.19",
+    "mustache": "^0.8.2",
+    "request": "^2.46.0",
+    "socket.io": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

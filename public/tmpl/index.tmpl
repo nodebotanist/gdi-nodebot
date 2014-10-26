@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Color Robot App!</title>
+		<style>
+			.colorBlock{
+				height: 40px;
+				width: 40px;
+				display: inline-block;
+				outline: 1px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Current Colors:</h2>
+		<div class="currentColors">
+		{{#currentColors}}
+			<div style="background-color:{{color}}" class="colorBlock"></div>
+		{{/currentColors}}
+		</div>
+		<h2>Queued Colors:</h2>
+		<div class="queuedColors">
+		{{#queuedColors}}
+			<div style="background-color:{{color}}" class="colorBlock"></div>
+		{{/queuedColors}}
+		</div>
+		<form id="addColorForm">
+			<h1>Add A Color:</h1>
+			<div class="sampleColor colorBlock"></div><br/>
+			<label for="red">Red:</label>
+			<input type="range" min="0" max="255" step="1" name="red" />
+			<label for="green">Green:</label>
+			<input type="range" min="0" max="255" step="1" name="green" />
+			<label for="blue">Blue:</label>
+			<input type="range" min="0" max="255" step="1" name="blue" />
+		</form>
+	</body>
+</html>
